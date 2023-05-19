@@ -12,8 +12,7 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
   transition: ease-in-out 10ms;
-  &:hover{
+  &:hover {
     opacity: 75%;
   }
-  
 `;
