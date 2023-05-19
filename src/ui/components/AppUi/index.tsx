@@ -1,2 +1,2 @@
 export { CharacterCard } from '@/CharacterCard'
-export { Button } from "antd";
+export { Button, Typography, Layout } from "antd";
