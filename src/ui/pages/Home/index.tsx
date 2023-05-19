@@ -17,6 +17,8 @@ export function Home() {
             backgroundColor: colors.purple,
             height: "227px",
             display: "flex",
+            flexDirection: "row",
+            gap: "2rem",
             alignItems: "center",
           }}
         >
@@ -25,6 +27,12 @@ export function Home() {
             width={"216px"}
             height={"132px"}
           />
+          <div
+            style={{ display: "flex", flexDirection: "row", alignItems: 'center', justifyContent: 'center', gap: '48px' }}
+          >
+            <h1>aa</h1>
+            <h1>aa</h1>
+          </div>
         </Layout.Header>
         <Layout.Content
           style={{
