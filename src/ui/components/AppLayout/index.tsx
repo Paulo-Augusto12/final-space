@@ -1,4 +1,4 @@
-import { Layout, Header } from "@/AppUi";
+import { Layout, Header, Footer } from "@/AppUi";
 import { useStyle } from "../../style/useStyle";
 import React from "react";
 
@@ -28,7 +28,9 @@ export function AppLayout({ children, contentStyle }: IAppLayoutProps) {
           display: "flex",
           alignItems: "center",
         }}
-      ></Layout.Footer>
+      >
+        <Footer />
+      </Layout.Footer>
     </Layout>
   );
 }
