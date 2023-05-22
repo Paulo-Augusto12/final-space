@@ -1,5 +1,3 @@
-
-
 import axios from "axios";
 import { IHttpService } from "../domain/interfaces/http/IHttpService";
 import { HttpResponse } from "../domain/models/httpResponse";
