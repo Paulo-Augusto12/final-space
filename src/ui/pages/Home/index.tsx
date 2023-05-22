@@ -6,7 +6,7 @@ import { Space, Spin } from "antd";
 import { useHome } from "./useHome";
 
 export function Home() {
-  const { colors, fonts, sizes, weights } = useStyle();
+  const { colors } = useStyle();
 
   const { states, elements } = useHome();
   return (
