@@ -1,5 +1,5 @@
 import { FinnTheHuman, MapPin, Quotes } from "@phosphor-icons/react";
-import { Layout, Space, Typography } from "antd";
+import { Layout, Space, Typography } from "../AppUi";
 import { useStyle } from "../../style/useStyle";
 
 export function Header() {
