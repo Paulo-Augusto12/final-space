@@ -14,7 +14,7 @@ export function Location() {
         padding: "3rem",
       }}
     >
-      <InDevelopment />
+      <InDevelopment inDevelopmentText="Location page in development" />
     </AppLayout>
   );
 }

@@ -12,7 +12,7 @@ export function Quotes() {
         padding: "3rem",
       }}
     >
-      <InDevelopment />
+      <InDevelopment inDevelopmentText="Quotes page in development" />
     </AppLayout>
   );
 }
