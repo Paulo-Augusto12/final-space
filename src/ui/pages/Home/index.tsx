@@ -8,7 +8,7 @@ import { useHome } from "./useHome";
 export function Home() {
   const { colors, fonts, sizes, weights } = useStyle();
 
-  const { states } = useHome();
+  const { states, elements } = useHome();
   return (
     <Space direction="vertical" style={{ width: "100%" }}>
       <Layout>
@@ -28,10 +28,30 @@ export function Home() {
             height={"132px"}
           />
           <div
-            style={{ display: "flex", flexDirection: "row", alignItems: 'center', justifyContent: 'center', gap: '48px' }}
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "48px",
+            }}
           >
-            <h1>aa</h1>
-            <h1>aa</h1>
+            <Space size={"large"}>
+              {elements.headerItems.map(({ icon, name, route }, index) => (
+                <Typography.Title
+                  key={index}
+                  style={{
+                    color: colors.fontColor,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "1.5rem",
+                  }}
+                  level={2}
+                >
+                  {name} {icon}
+                </Typography.Title>
+              ))}
+            </Space>
           </div>
         </Layout.Header>
         <Layout.Content
