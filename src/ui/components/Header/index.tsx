@@ -24,40 +24,38 @@ export function Header() {
   ];
 
   return (
-    <Layout>
-      <Layout.Header>
-        <img
-          src="https://finalspaceapi.com/img/logo.png"
-          width={"216px"}
-          height={"132px"}
-        />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "48px",
-          }}
-        >
-          <Space size={"large"}>
-            {headerItems.map(({ icon, name, route }, index) => (
-              <Typography.Title
-                key={index}
-                style={{
-                  color: colors.fontColor,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "1.5rem",
-                }}
-                level={2}
-              >
-                {name} {icon}
-              </Typography.Title>
-            ))}
-          </Space>
-        </div>
-      </Layout.Header>
-    </Layout>
+    <div style={{ display: "flex", alignItems: "center", gap: "3rem" }}>
+      <img
+        src="https://finalspaceapi.com/img/logo.png"
+        width={"216px"}
+        height={"132px"}
+      />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "48px",
+        }}
+      >
+        <Space size={"large"}>
+          {headerItems.map(({ icon, name, route }, index) => (
+            <Typography.Title
+              key={index}
+              style={{
+                color: colors.fontColor,
+                display: "flex",
+                alignItems: "center",
+                gap: "1.5rem",
+              }}
+              level={2}
+            >
+              {name} {icon}
+            </Typography.Title>
+          ))}
+        </Space>
+      </div>
+    </div>
   );
 }
