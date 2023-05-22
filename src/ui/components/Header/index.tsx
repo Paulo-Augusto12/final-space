@@ -42,9 +42,8 @@ export function Header() {
       >
         <Space size={"large"}>
           {headerItems.map(({ icon, name, route }, index) => (
-            <Link to={route}>
+            <Link to={route} key={index}>
               <Typography.Title
-                key={index}
                 style={{
                   color: colors.fontColor,
                   display: "flex",
