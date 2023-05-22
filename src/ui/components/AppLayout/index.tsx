@@ -27,6 +27,7 @@ export function AppLayout({ children, contentStyle }: IAppLayoutProps) {
           height: "227px",
           display: "flex",
           alignItems: "center",
+          flexDirection: "row-reverse",
         }}
       >
         <Footer />
