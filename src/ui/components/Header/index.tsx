@@ -1,6 +1,7 @@
 import { FinnTheHuman, MapPin, Quotes } from "@phosphor-icons/react";
-import { Layout, Space, Typography } from "@/AppUi";
+import { Space, Typography } from "@/AppUi";
 import { useStyle } from "../../style/useStyle";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const { colors } = useStyle();
@@ -41,18 +42,20 @@ export function Header() {
       >
         <Space size={"large"}>
           {headerItems.map(({ icon, name, route }, index) => (
-            <Typography.Title
-              key={index}
-              style={{
-                color: colors.fontColor,
-                display: "flex",
-                alignItems: "center",
-                gap: "1.5rem",
-              }}
-              level={2}
-            >
-              {name} {icon}
-            </Typography.Title>
+            <Link to={route}>
+              <Typography.Title
+                key={index}
+                style={{
+                  color: colors.fontColor,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "1.5rem",
+                }}
+                level={2}
+              >
+                {name} {icon}
+              </Typography.Title>
+            </Link>
           ))}
         </Space>
       </div>

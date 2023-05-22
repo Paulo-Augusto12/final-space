@@ -3,6 +3,7 @@ import React from "react";
 import { CharacterCard, Layout, Space, Spin } from "@/AppUi";
 import { useStyle } from "../../style/useStyle";
 import { useHome } from "./useHome";
+import { Header } from "../../components/Header";
 
 export function Home() {
   const { colors } = useStyle();
@@ -11,6 +12,16 @@ export function Home() {
   return (
     <Space direction="vertical" style={{ width: "100%" }}>
       <Layout>
+        <Layout.Header
+          style={{
+            backgroundColor: colors.purple,
+            height: "227px",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Header />
+        </Layout.Header>
         <Layout.Content
           style={{
             backgroundColor: colors.background,
