@@ -21,24 +21,6 @@ export function useHome() {
     setCharl(data);
   }
 
-  const headerItems = [
-    {
-      name: "Characters",
-      icon: <FinnTheHuman size={32} />,
-      route: "/",
-    },
-    {
-      name: "Locations",
-      icon: <MapPin size={32} />,
-      route: "/locations",
-    },
-    {
-      name: "Get a quote",
-      icon: <Quotes size={32} />,
-      route: "/quotes",
-    },
-  ];
-
   useEffect(() => {
     handleGetChars();
   }, []);
@@ -46,9 +28,6 @@ export function useHome() {
   return {
     states: {
       charl,
-    },
-    elements: {
-      headerItems,
     },
   };
 }

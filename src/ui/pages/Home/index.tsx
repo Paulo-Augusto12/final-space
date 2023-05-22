@@ -1,14 +1,13 @@
 import React from "react";
 
-import { CharacterCard, Typography, Layout } from "@/AppUi";
+import { CharacterCard, Layout, Space, Spin } from "@/AppUi";
 import { useStyle } from "../../style/useStyle";
-import { Space, Spin } from "antd";
 import { useHome } from "./useHome";
 
 export function Home() {
   const { colors } = useStyle();
 
-  const { states, elements } = useHome();
+  const { states } = useHome();
   return (
     <Space direction="vertical" style={{ width: "100%" }}>
       <Layout>
