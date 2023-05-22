@@ -1,7 +1,7 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { Location } from "../pages/Location";
-import { Header } from "@/Header";
+import { Quotes } from "../pages/Quotes";
 
 export function AppRoutes() {
   return (
@@ -13,7 +13,7 @@ export function AppRoutes() {
         <Route path="/locations" element={<Location />} />
       </Routes>
       <Routes>
-        <Route path="/quotes" element={<Home />} />
+        <Route path="/quotes" element={<Quotes />} />
       </Routes>
     </BrowserRouter>
   );
