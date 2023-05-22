@@ -4,11 +4,11 @@ import { Button } from "./style";
 
 interface ICharacterCardProps {
   name: string;
-  photo: string
+  photo: string;
 }
 
 const { Title } = Typography;
-export function CharacterCard({ name, photo }: ICharacterCardProps ) {
+export function CharacterCard({ name, photo }: ICharacterCardProps) {
   const theme = useStyle();
   return (
     <Button>

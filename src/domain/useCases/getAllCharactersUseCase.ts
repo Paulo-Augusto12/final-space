@@ -1,7 +1,5 @@
 import { IGetAllCharactersRepository } from "../interfaces/Characters/IGetAllCharactersRepository";
-import {
-  IGetAllCharactersUseCase,
-} from "./abstractions/IGetAllCharactersUseCase";
+import { IGetAllCharactersUseCase } from "./abstractions/IGetAllCharactersUseCase";
 import { SimpleCharacter } from "./models/SimpleCharacter";
 
 export class GetAllCharactersUseCase implements IGetAllCharactersUseCase {
