@@ -21,7 +21,14 @@ export function AppLayout({ children, contentStyle }: IAppLayoutProps) {
         <Header />
       </Layout.Header>
       <Layout.Content style={contentStyle}>{children}</Layout.Content>
-      {/* <Layout.Footer ></Layout.Footer> */}
+      <Layout.Footer
+        style={{
+          backgroundColor: colors.purple,
+          height: "227px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      ></Layout.Footer>
     </Layout>
   );
 }
